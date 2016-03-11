@@ -1,0 +1,252 @@
+@font-face {
+  font-family: "MuseoSans";
+  src: url("../font/MuseoSansCyrl_0 2.otf");
+  font-style: normal; }
+html {
+  height: 100%;
+  overflow-x: hidden;
+  text-align: center;
+  margin: 0;
+  padding: 0; }
+  html body {
+    font-family: MuseoSans;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: #414141;
+    background-color: #f1f2f2; }
+    html body button#navigator_button {
+      width: 50px;
+      height: 50px;
+      background-color: #d83454;
+      -moz-border-radius: 25px;
+      -webkit-border-radius: 25px;
+      border-radius: 25px;
+      shape-outside: circle(50%);
+      padding: 12.5px;
+      border: solid 4px #fff;
+      color: #fff;
+      position: fixed;
+      bottom: 0px;
+      margin: 0 auto;
+      left: 50%;
+      margin-left: -25px;
+      z-index: 4; }
+      html body button#navigator_button img {
+        width: 25px; }
+      @media screen and (max-width: 720px) {
+        html body button#navigator_button {
+          margin-bottom: 20%; } }
+      @media screen and (min-width: 720px) {
+        html body button#navigator_button {
+          margin-bottom: 12%; } }
+      @media screen and (min-width: 1200px) {
+        html body button#navigator_button {
+          margin-bottom: 2%; } }
+    html body button#navigator_button:active {
+      background-color: #c83454;
+      -webkit-box-shadow: inset 0px 0px 19px -42px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: inset 0px 0px 19px -42px rgba(0, 0, 0, 0.75);
+      box-shadow: inset 0px 0px 19px -42px rgba(0, 0, 0, 0.75); }
+    html body section {
+      min-height: 100%;
+      width: 100%; }
+      html body section figure {
+        margin: 0 auto; }
+        @media screen and (max-width: 720px) {
+          html body section figure {
+            width: 80%; } }
+        @media screen and (min-width: 720px) {
+          html body section figure {
+            width: 50%; } }
+        @media screen and (min-width: 1200px) {
+          html body section figure {
+            width: 30%; } }
+      html body section img.img-responsive {
+        margin: 0 auto; }
+      html body section footer {
+        position: relative;
+        margin: 12%; }
+      @media screen and (max-width: 720px) {
+        html body section h1 {
+          font-size: 2.4em; } }
+      @media screen and (min-width: 720px) {
+        html body section h1 {
+          font-size: 400%;
+          margin: 10%; } }
+      @media screen and (min-width: 1200px) {
+        html body section h1 {
+          font-size: 400%;
+          margin: 10%; } }
+      html body section h3 span {
+        color: #d83454; }
+      html body section#header {
+        font-size: 100%;
+        color: #fff;
+        background-color: #d83454; }
+        @media screen and (max-width: 720px) {
+          html body section#header {
+            padding: 20% 6.5%; } }
+        @media screen and (min-width: 720px) {
+          html body section#header {
+            padding: 40% 13%; } }
+        @media screen and (min-width: 1200px) {
+          html body section#header {
+            padding: 15% 5%; } }
+      @media screen and (max-width: 720px) {
+        html body section#session_1 {
+          padding: 20% 6.5%; } }
+      @media screen and (min-width: 720px) {
+        html body section#session_1 {
+          padding: 40% 13%; } }
+      @media screen and (min-width: 1200px) {
+        html body section#session_1 {
+          padding: 15% 5%; } }
+      html body section#session_1 article figure {
+        visibility: hidden; }
+      @media screen and (max-width: 720px) {
+        html body section#session_2 {
+          padding: 20% 6.5%; } }
+      @media screen and (min-width: 720px) {
+        html body section#session_2 {
+          padding: 40% 13%; } }
+      @media screen and (min-width: 1200px) {
+        html body section#session_2 {
+          padding: 15% 5%; } }
+      html body section#session_2 article figure {
+        visibility: hidden; }
+      @media screen and (max-width: 720px) {
+        html body section#session_3 {
+          padding: 20% 6.5%; } }
+      @media screen and (min-width: 720px) {
+        html body section#session_3 {
+          padding: 40% 13%; } }
+      @media screen and (min-width: 1200px) {
+        html body section#session_3 {
+          padding: 15% 5%; } }
+      html body section#session_3 article figure {
+        visibility: hidden; }
+      html body section#session_3 footer {
+        visibility: hidden; }
+        html body section#session_3 footerh3 {
+          margin: 15% 0px; }
+      @media screen and (max-width: 720px) {
+        html body section#clients article div figure img {
+          width: 30%;
+          margin-top: 15%; } }
+      @media screen and (min-width: 720px) {
+        html body section#clients article div figure img {
+          width: 60%;
+          margin-top: 15%; } }
+      @media screen and (min-width: 1200px) {
+        html body section#clients article div figure img {
+          width: 100%;
+          margin-top: 15%; } }
+      html body section#services {
+        background-color: white; }
+        @media screen and (max-width: 720px) {
+          html body section#services {
+            padding: 20% 6.5%; } }
+        @media screen and (min-width: 720px) {
+          html body section#services {
+            padding: 40% 13%; } }
+        @media screen and (min-width: 1200px) {
+          html body section#services {
+            padding: 15% 5%; } }
+        @media screen and (max-width: 720px) {
+          html body section#services article div figure.circle {
+            width: 60px;
+            height: 60px;
+            background-color: #d83454;
+            -moz-border-radius: 30px;
+            -webkit-border-radius: 30px;
+            border-radius: 30px;
+            shape-outside: circle(50%);
+            padding: 15px;
+            margin: 8%; }
+            html body section#services article div figure.circle img {
+              width: 30px; } }
+        @media screen and (min-width: 720px) {
+          html body section#services article div figure.circle {
+            width: 120px;
+            height: 120px;
+            background-color: #d83454;
+            -moz-border-radius: 60px;
+            -webkit-border-radius: 60px;
+            border-radius: 60px;
+            shape-outside: circle(50%);
+            padding: 30px;
+            margin: 8%; }
+            html body section#services article div figure.circle img {
+              width: 60px; } }
+        @media screen and (min-width: 1200px) {
+          html body section#services article div figure.circle {
+            width: 180px;
+            height: 180px;
+            background-color: #d83454;
+            -moz-border-radius: 90px;
+            -webkit-border-radius: 90px;
+            border-radius: 90px;
+            shape-outside: circle(50%);
+            padding: 45px; }
+            html body section#services article div figure.circle img {
+              width: 90px; } }
+        @media screen and (max-width: 720px) {
+          html body section#services article div h4 {
+            font-size: 100%;
+            text-align: left;
+            line-height: 3; } }
+        @media screen and (min-width: 720px) {
+          html body section#services article div h4 {
+            font-size: 200%;
+            text-align: left;
+            line-height: 5; } }
+        @media screen and (min-width: 1200px) {
+          html body section#services article div h4 {
+            margin: 50% 0; } }
+      html body section#contact article input {
+        padding: 6%;
+        color: #c83454; }
+      html body section#contact article input:focus, html body section#contact article textarea:focus {
+        -webkit-box-shadow: inset 0px 0px 199px -42px rgba(216, 52, 84, 0.1);
+        -moz-box-shadow: inset 0px 0px 199px -42px rgba(216, 52, 84, 0.1);
+        box-shadow: inset 0px 0px 199px -42px rgba(216, 52, 84, 0.1);
+        border: solid 1px #c83454; }
+      html body section#contact article textarea {
+        padding: 6%;
+        color: #c83454; }
+      html body section#contact article button.button-submit {
+        background-color: #d83454;
+        color: #fff;
+        padding: 6%;
+        line-height: 0px; }
+      html body section#contact article button.button-submit:active {
+        background-color: #c83454;
+        -webkit-box-shadow: inset 0px 0px 199px -42px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: inset 0px 0px 199px -42px rgba(0, 0, 0, 0.75);
+        box-shadow: inset 0px 0px 199px -42px rgba(0, 0, 0, 0.75); }
+
+#myMap {
+  width: 100%;
+  height: 400px;
+  -webkit-box-shadow: inset 0px 0px 12px 3px #877c87;
+  -moz-box-shadow: inset 0px 0px 12px 3px #877c87;
+  box-shadow: inset 0px 0px 12px 3px #877c87;
+  text-align: left; }
+
+.error {
+  color: red; }
+
+.label {
+  background-color: #d83454;
+  border-spacing: 10px;
+  border-collapse: separate;
+  padding: 10px;
+  height: 20px;
+  width: 20px;
+  text-align: left;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px; }
+
+/*# sourceMappingURL=style.css.map */

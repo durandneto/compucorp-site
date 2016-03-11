@@ -1,0 +1,203 @@
+$color-ligth : rgb(241,242,242)
+$color-second : rgb(65,65,65)
+$color-pink : rgb(216,52,84)
+$break-small: 720px
+$break-medium: 720px
+$break-large: 1200px
+
+@mixin border($size,$color)
+  border: solid $size $color
+
+@mixin getPadding()
+  @media screen and (max-width: $break-small)
+    padding : 20% 6.5% 
+  @media screen and (min-width: $break-medium)
+    padding : 40% 13%
+  @media screen and (min-width: $break-large)
+    padding : 15% 5%
+
+@mixin circle($radius) 
+  width: $radius + px
+  height: $radius + px
+  background-color: $color-pink
+  -moz-border-radius: $radius/2 + px
+  -webkit-border-radius: $radius/2 + px
+  border-radius: $radius/2 + px
+  shape-outside: circle(50%)
+  padding:  $radius/4 + px
+  img
+    width : $radius/2 + px
+@font-face 
+  font-family: 'MuseoSans'
+  src: url('../font/MuseoSansCyrl_0 2.otf')
+  font-style: normal
+
+html
+  height : 100%
+  overflow-x: hidden
+  text-align: center
+  margin: 0
+  padding: 0
+  body
+    font-family: MuseoSans
+    margin: 0
+    padding: 0
+    height: 100% 
+    color: $color-second
+    background-color: $color-ligth
+    & button#navigator_button 
+      @include circle(50)
+      @include border(4px , #fff)
+      color : #fff
+      position : fixed
+      bottom : 0px
+      margin : 0 auto
+      left : 50%
+      margin-left : -25px
+      z-index : 4
+      @media screen and (max-width: $break-small)
+        margin-bottom : 20% 
+      @media screen and (min-width: $break-medium)
+        margin-bottom : 12% 
+      @media screen and (min-width: $break-large)
+        margin-bottom : 2% 
+    & button#navigator_button:active
+      background-color: rgb(200,52,84)
+      -webkit-box-shadow: inset 0px 0px 19px -42px rgba(0,0,0,0.75)
+      -moz-box-shadow: inset 0px 0px 19px -42px rgba(0,0,0,0.75)
+      box-shadow: inset 0px 0px 19px -42px rgba(0,0,0,0.75)
+    section
+      min-height: 100%
+      width: 100%
+      figure
+        margin : 0 auto
+        @media screen and (max-width: $break-small)
+          width : 80%
+        @media screen and (min-width: $break-medium)
+          width : 50%
+        @media screen and (min-width: $break-large)
+          width : 30%
+      img.img-responsive
+        margin : 0 auto
+      footer
+        position: relative
+        margin: 12%
+      h1
+        @media screen and (max-width: $break-small)
+          font-size: 2.4em 
+        @media screen and (min-width: $break-medium)
+          font-size: 400%
+          margin : 10%
+        @media screen and (min-width: $break-large)
+          font-size: 400%
+          margin : 10%
+      h3 span
+        color : $color-pink
+      &#header
+        @include getPadding()
+        font-size: 100%
+        color: #fff
+        background-color: $color-pink
+      &#session_1 
+        @include getPadding()
+        article
+          figure
+            visibility : hidden
+      &#session_2
+        @include getPadding()
+        article
+          figure
+            visibility : hidden
+      &#session_3
+        @include getPadding()
+        article
+          figure
+            visibility : hidden
+        footer
+          visibility : hidden
+          &h3
+            margin: 15% 0px
+      &#clients
+        article div figure img
+          @media screen and (max-width: $break-small)
+            width : 30%
+            margin-top : 15%
+          @media screen and (min-width: $break-medium)
+            width : 60%
+            margin-top : 15%
+          @media screen and (min-width: $break-large)
+            width : 100%
+            margin-top : 15%
+      &#services 
+        @include getPadding()
+        background-color: rgb(255,255,255)
+        article 
+          & div figure.circle
+            @media screen and (max-width: $break-small)
+              @include circle(60)
+              margin : 8%
+            @media screen and (min-width: $break-medium)
+              @include circle(120)
+              margin : 8%
+            @media screen and (min-width: $break-large)
+              @include circle(180) 
+          & div h4
+            @media screen and (max-width: $break-small)
+              font-size: 100%
+              text-align: left
+              line-height: 3
+            @media screen and (min-width: $break-medium)
+              font-size: 200%
+              text-align: left
+              line-height: 5
+            @media screen and (min-width: $break-large)
+              margin: 50% 0
+               
+      &#contact 
+        article 
+          input
+            padding: 6%
+            color : rgb(200,52,84)
+          input:focus , textarea:focus
+            -webkit-box-shadow: inset 0px 0px 199px -42px rgba(216,52,84,0.1)
+            -moz-box-shadow: inset 0px 0px 199px -42px rgba(216,52,84,0.1)
+            box-shadow: inset 0px 0px 199px -42px rgba(216,52,84,0.1)
+            border: solid 1px rgb(200,52,84)
+          textarea
+            padding: 6%
+            color : rgb(200,52,84)
+          button
+            &.button-submit
+              background-color: rgb(216,52,84)
+              color: #fff
+              padding: 6%
+              line-height: 0px
+            &.button-submit:active
+              background-color: rgb(200,52,84)
+              -webkit-box-shadow: inset 0px 0px 199px -42px rgba(0,0,0,0.75)
+              -moz-box-shadow: inset 0px 0px 199px -42px rgba(0,0,0,0.75)
+              box-shadow: inset 0px 0px 199px -42px rgba(0,0,0,0.75)
+
+#myMap
+  width: 100%
+  height: 400px
+  -webkit-box-shadow: inset 0px 0px 12px 3px rgba(135,124,135,1)
+  -moz-box-shadow: inset 0px 0px 12px 3px rgba(135,124,135,1)
+  box-shadow: inset 0px 0px 12px 3px rgba(135,124,135,1)
+  text-align: left
+
+.error
+  color : red
+
+.label 
+  box-sizing:border-box
+  background-color: rgb(216,52,84)
+  border-spacing: 10px
+  border-collapse: separate
+  padding: 10px
+  height: 20px
+  width: 20px
+  text-align: left
+  border-radius: 10px
+  -moz-border-radius: 10px 
+  -webkit-border-radius: 10px 
